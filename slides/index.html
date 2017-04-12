@@ -55,6 +55,32 @@
 				<section>
 					<h3>Why is it useful?</h3>
 					<p>
+						A brief history of javascript must first be understood.
+						Javascript has historically been powerful enough for most of our needs in the web.
+					</p>
+					<p>
+						However, large file sizes and poor performance in comparison to native languages
+						create significant problems within
+						<a href="http://webassembly.org/docs/use-cases/"> certain contexts. </a>
+					</p>
+				</section>
+				
+				<section>
+					<h4>Alternatives</h4>
+					<p>
+						Using Emscripten, you can already compile many source languages (Haskell, etc.) into relatively
+						fast JS.
+					</p>
+					<p>
+						Developers needed more power, so a special subset of JS called asm.js was declared.
+						This allows for javascript to be executed much closer to native speeds. (2x difference)
+					</p>
+				</section>
+				
+				<section>
+					<h4>Performance</h4>
+					<p>
+						
 					</p>
 				</section>
 
@@ -97,6 +123,19 @@ int add(int lhs, int rhs) {
 
 				<section>
 					<h2>What is a working example?</h2>
+					<p>
+					We must first enable our browser to run wasm. 
+					You must be running at least Firefox 52 or Chrome 57 and enable special flags,
+					just as with WebGL.
+					</p>
+					<p>Example in Chrome:
+					</br>
+					<a href="">chrome://flags/#enable-webassembly</a>
+					</p>
+				</section>
+				
+				<section>
+				
 				</section>
 
 				<section>
