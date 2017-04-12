@@ -44,7 +44,7 @@
 				</section>
 
 				<section>
-					<h2>What is WASM?</h2>
+					<h3>What is WASM?</h3>
 					<p>
 						Web assembly serves as a new compilation target for web developers.
 						This standard is being developed by major players including Apple,
@@ -53,14 +53,37 @@
 				</section>
 
 				<section>
-					<h2>Why is it useful?</h2>
+					<h3>Why is it useful?</h3>
 					<p>
-						A brief history of javascript must first be understood.
 					</p>
 				</section>
 
 				<section>
-					<h2>Who uses it, and is it stable?</h2>
+					<h3>Before WASM = asm.js</h3>
+					<p>asm.js is a low-level subset of javascript that is more easily
+					optimized by AOT compilers and JS engines.</p>
+					<pre>
+						<code class="c"data-trim>
+// demo.c
+DLL_EXPORT
+int add(int lhs, int rhs) {
+		return lhs + rhs;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h4>Examples of asm.js/wasm</h4>
+					<ul>
+						<li><a href="http://webassembly.org/demo/Tanks/">Tanks Game</a></li>
+						<li><a href="http://bit.ly/2ppSvnl">Chess Engines</a></li>
+						<li><a href="http://pypyjs.org/">Python Interpreter</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Who uses it, and is it stable?</h3>
 					<p>
 						Currently, web assembly is not yet used. There are multiple issues
 						preventing widespread adoption, namely:
