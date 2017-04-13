@@ -11,6 +11,8 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -46,7 +48,10 @@
 				<section>
 					<h4>What is WASM?</h4>
 					<p>
-						Web assembly serves as a new compilation target for web developers.
+						Web assembly serves as a new compilation target for web developers,
+						available both as a	bytecode or text format.
+					</p>
+					<p>
 						This standard is being developed by major players including Apple,
 						Google, Microsot, and Mozilla.
 					</p>
@@ -55,12 +60,12 @@
 				<section>
 					<h4>Why is it useful?</h4>
 					<p>
-						A brief history of javascript must first be understood.
-						Javascript has historically been powerful enough for most of our needs in the web.
+						Javascript has historically been powerful enough for most of our
+						needs in the web.
 					</p>
 					<p>
-						However, large file sizes and poor performance in comparison to native languages
-						create significant problems within
+						However, large file sizes and poor performance in comparison to
+						native languages create significant problems within
 						<a href="http://webassembly.org/docs/use-cases/"> certain contexts. </a>
 					</p>
 				</section>
@@ -68,12 +73,13 @@
 				<section>
 					<h4>Alternatives</h4>
 					<p>
-						Using Emscripten, you can already compile many source languages (Haskell, etc.) into relatively
-						fast JS.
+						Using Emscripten, you can already compile any source languages
+						supported by LLVM (Rust, C, C++, etc.) into relatively fast JS.
 					</p>
 					<p>
-						Developers needed more power, so a special subset of JS called asm.js was declared.
-						This allows for javascript to be executed much closer to native speeds. (2x difference)
+						Developers needed more power, so a special subset of JS called
+						asm.js was declared. This allows for javascript to be executed much
+						closer to native speeds. (~2x difference)
 					</p>
 				</section>
 				
@@ -118,6 +124,7 @@ int add(int lhs, int rhs) {
 						<li>The standard is still rapidly changing.</li>
 						<li>Browser compatibility is lacking.</li>
 						<li>Source languages are few.</li>
+						<li>DOM access is insufficient.</li>
 					</ol>
 				</section>
 				
@@ -131,9 +138,13 @@ int add(int lhs, int rhs) {
 						<ul>
 							<li>LLVM - Supplies C/C++ API used by compilers</li>
 							<li>
-							<a href="https://git.io/vSSDa">Binaryen</a> - Compiler
-							and infrastructure library</li>
-							<li>Optionally: <a href="https://git.io/vSSyp">wabt</a></li>
+								<a href="https://git.io/vSSDa">Binaryen</a> - Compiler
+								and infrastructure library
+							</li>
+							<li>
+								Optionally: <a href="https://git.io/vSSyp">wabt</a> or 
+								<a href="https://git.io/vSSp0">Emscripten</a>
+							</li>
 						</ul>
 					</p>
 				</section>
