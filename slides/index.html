@@ -134,32 +134,28 @@ int add(int lhs, int rhs) {
 						Default installations of LLVM do not support compiling to wasm.
 					</p>
 					<p>
-						<a href="https://git.io/vSSQz">Compiling your toolchain:</a>
-						<ul>
-							<li>LLVM - Supplies C/C++ API used by compilers</li>
-							<li>
-								<a href="https://git.io/vSSDa">Binaryen</a> - Compiler
-								and infrastructure library
-							</li>
-							<li>
-								Optionally: <a href="https://git.io/vSSyp">wabt</a> or 
-								<a href="https://git.io/vSSp0">Emscripten</a>
-							</li>
-						</ul>
+						Building your toolchain:
+					</br>
+						<a href="https://git.io/vSSQz">LLVM</a> (Supplies C/C++ backend API
+						used by compilers), <a href="https://git.io/vSSDa">Binaryen</a> 
+						(Compiler and infrastructure library), and optionally: 
+						<a href="https://git.io/vSSyp">wabt</a>
+						</br> or </br>
+						<a href="https://git.io/vSSp0">Emscripten</a> (Compiler from C/C++
+						to asm.js/wasm)
+						</br> or </br>
+						<a href="https://git.io/vS9n1">JSIL</a> (Compiles CIL to javascript)
+						and <a href="https://git.io/vS9sd">ilwasm</a> (Backend code generator
+						for JSIL for wasm).
 					</p>
 				</section>
 
 				<section>
-					<h4>What is a working example?</h4>
+					<h4>Browser support</h4>
 					<p>
-					We must first enable our browser to run wasm. 
-					You must be running at least Firefox 52 or Chrome 57.
-					You can try enabling it in older versions:
-					</p>
-					<p>
-					<a href="">chrome://flags/#enable-webassembly</a>
-					</br>
-					<a href=""></a>
+					You must be running at least Firefox 52, Chrome 57, or Opera 44.
+					You can also try enabling it in older versions or 
+					<a href="http://caniuse.com/#feat=wasm">other browsers.</a>
 					</p>
 				</section>
 				
