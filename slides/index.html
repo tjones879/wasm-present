@@ -120,17 +120,35 @@ int add(int lhs, int rhs) {
 						<li>Source languages are few.</li>
 					</ol>
 				</section>
+				
+				<section>
+					<h4>Setting up your toolchain</h4>
+					<p>
+						Default installations of LLVM do not support compiling to wasm.
+					</p>
+					<p>
+						<a href="https://git.io/vSSQz">Compiling your toolchain:</a>
+						<ul>
+							<li>LLVM - Supplies C/C++ API used by compilers</li>
+							<li>
+							<a href="https://git.io/vSSDa">Binaryen</a> - Compiler
+							and infrastructure library</li>
+							<li>Optionally: <a href="https://git.io/vSSyp">wabt</a></li>
+						</ul>
+					</p>
+				</section>
 
 				<section>
 					<h2>What is a working example?</h2>
 					<p>
 					We must first enable our browser to run wasm. 
-					You must be running at least Firefox 52 or Chrome 57 and enable special flags,
-					just as with WebGL.
+					You must be running at least Firefox 52 or Chrome 57.
+					You can try enabling it in older versions:
 					</p>
-					<p>Example in Chrome:
-					</br>
+					<p>
 					<a href="">chrome://flags/#enable-webassembly</a>
+					</br>
+					<a href=""></a>
 					</p>
 				</section>
 				
@@ -140,6 +158,15 @@ int add(int lhs, int rhs) {
 
 				<section>
 					<h2>Where is wasm heading?</h2>
+				</section>
+				
+				<section>
+					<h4>Documentation / References</h4>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">Mozilla Docs</a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
 				</section>
 			</div>
 		</div>
